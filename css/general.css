@@ -31,6 +31,7 @@
   #333
   #6f6f6f
   #aaa
+  #767676
 
 --- 05 SHADOWS
   
@@ -205,6 +206,10 @@
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {
