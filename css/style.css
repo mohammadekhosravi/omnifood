@@ -3,6 +3,7 @@
 html {
   /* font-size: 10px = 62.5% of 16px to respect user's browser font-size stttings. */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 * {
@@ -16,6 +17,8 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  /* This only works if there is nothing absolutely positioned to body */
+  overflow-x: hidden;
 }
 
 /* ************************* */
@@ -92,6 +95,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #fdf2e9;
+  position: relative; /* For mobile navigation */
 
   /* Because we want sticky navigation*/
   height: 9.6rem;
@@ -139,6 +143,25 @@ body {
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /* ************************* */
