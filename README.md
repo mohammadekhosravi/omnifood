@@ -1,1 +1,1 @@
-### Please visit https://mamad-omnifood.netlify.app/ to see the site in action.
+### Please visit https://mamad.netlify.app/ to see the site in action.
